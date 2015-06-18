@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.sipgate.lunch.sipgatelunch" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="android.sipgate.lunch.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.sipgate" >
+        <activity
+            android:name="android.sipgate.lunch.MenuWeekActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="android.sipgate.lunch.FullscreenActivity"
+            android:label="@string/title_activity_fullscreen" >
+        </activity>
+        <activity
+            android:name="android.sipgate.lunch.CustomPreferenceActivity"
+            android:label="@string/title_activity_custom_preferences" >
+        </activity>
+    </application>
+
+</manifest>

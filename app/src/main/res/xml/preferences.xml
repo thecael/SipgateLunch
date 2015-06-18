@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lkv="http://www.lkv-nrw.de"
+    android:title="Einstellungen">
+    <PreferenceCategory android:title="Allgemeine Einstellungen">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="transculentNavBar"
+        android:summary="Die Navigationsleiste transparent erscheinen lassen (ab Android 4.4)"
+        android:title="Transparente Navigationsleiste"></CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Google-Bilder Suche">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enableGoogleImageSearch"
+            android:summary="Fehlende Fotos der Gerichte über Google-Bilder suchen."
+            android:title="Google-Bilder Suche nutzen"></CheckBoxPreference>
+        <EditTextPreference
+            android:defaultValue="essen chefkoch.de"
+            android:key="googleImageSearchKeywords"
+            android:maxLength="400"
+            android:summary="Zusätzliche eigene Schlüsselwörter zur Verbesserung der Suchergebnisse"
+            android:title="Zusätzliche Schlüsselwörter"></EditTextPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

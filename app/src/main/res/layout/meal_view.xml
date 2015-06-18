@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/meal_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3px"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/mealTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:alpha="0.8"
+            android:background="#fff4f4f4"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="Meal title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/typeView"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ff0090ff"
+            android:orientation="horizontal"></View>
+    </RelativeLayout>
+
+</LinearLayout>
